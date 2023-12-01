@@ -41,25 +41,21 @@ public partial class Grid : Node2D
 
 			if(@event.IsActionPressed("up")) 
 			{
-				GD.Print("Up!");
 				moved = moveTiles("up");
 			}
 
 			if(@event.IsActionPressed("down")) 
 			{
-				GD.Print("Down!");
 				moved = moveTiles("down");
 			}
 
 			if(@event.IsActionPressed("left")) 
 			{
-				GD.Print("Left!");
 				moved = moveTiles("left");
 			}
 
 			if(@event.IsActionPressed("right")) 
 			{
-				GD.Print("Right!");
 				moved = moveTiles("right");
 			}
 

@@ -5,4 +5,5 @@
 [node name="Game" type="Node"]
 
 [node name="Grid" parent="." instance=ExtResource("1_we5qu")]
-position = Vector2(81, 61)
+position = Vector2(500, 500)
+scale = Vector2(3, 3)
