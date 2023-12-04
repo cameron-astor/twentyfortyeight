@@ -1,11 +1,12 @@
 using Godot;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data;
+
 
 public partial class Grid : Node2D
 {
+
+	private int DEBUG_MOVE_COUNTER = 0;
 
 	private PackedScene sceneTile;
 	private bool MOVEMENT_IN_PROGRESS = false;
@@ -62,7 +63,10 @@ public partial class Grid : Node2D
 			if (moved)
 			{
 				SpawnRandomTile();
+				DEBUG_MOVE_COUNTER++;
+				GD.Print(DEBUG_MOVE_COUNTER);
 			}
+
 		}
 
     }
@@ -168,7 +172,7 @@ public partial class Grid : Node2D
 		{
 			for (int y = 0; y < 4; y++)
 			{
-				if (grid[x, y] != null) // if there is a tile in the grid squar
+				if (grid[x, y] != null) // if there is a tile in the grid square
 				{
 					Tile t = grid[x, y];
 					Tween tween = t.CreateTween();
