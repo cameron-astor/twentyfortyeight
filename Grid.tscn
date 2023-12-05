@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Grid.cs" id="1_goylj"]
 
 [node name="Grid" type="Node2D"]
-position = Vector2(0, -1)
+position = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("1_goylj")
 
 [node name="Grid Background" type="Polygon2D" parent="."]

@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgg1tpij1a1cm"]
+[gd_scene load_steps=4 format=3 uid="uid://bgg1tpij1a1cm"]
 
 [ext_resource type="Script" path="res://Tile.cs" id="1_wv1wm"]
 
+[sub_resource type="FontVariation" id="FontVariation_itfte"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_2vmvt"]
+font = SubResource("FontVariation_itfte")
 font_size = 36
 font_color = Color(0, 0, 0, 1)
 
